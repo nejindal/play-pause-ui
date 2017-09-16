@@ -1,0 +1,72 @@
+.rounded{
+    border: 1px solid #999;
+    border-radius: 10px;
+  }
+  
+  .float-card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .circular-btn-div{
+    background-color:teal;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  body{margin:40px;}
+  
+  
+  .btn-circle {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 12px;
+    line-height: 1.428571429;
+    border-radius: 15px;
+  }
+  .btn-circle.btn-lg {
+    width: 50px;
+    height: 50px;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.33;
+    border-radius: 25px;
+  }
+  .btn-circle.btn-xl {
+    width: 70px;
+    height: 70px;
+    padding: 10px 16px;
+    font-size: 24px;
+    line-height: 1.33;
+    border-radius: 35px;
+  }
+
+  .flip3D > .front{
+    -webkit-transform: perspective(600px) rotateY(0deg);
+    transform: perspective(600px) rotateY(0deg);
+    backface-visibility: hidden;
+    -webkit-transition: transform .5s linear 0s;
+    -moz-transition: transform .5s linear 0s;
+    transition: transform .5s linear 0s;
+}
+
+.flip3D > .back{
+    position: absolute;
+    -webkit-transform: perspective(600px) rotateY(180deg);
+    transform: perspective(600px) rotateY(180deg);
+    backface-visibility: hidden;
+    transition: transform .5s linear 0s;
+    -webkit-transition: transform .5s linear 0s;
+    -moz-transition: transform .5s linear 0s;
+}
+
+.flip3D:hover > .front{
+    -webkit-transform: perspective(600px) rotateY(-180deg);
+    transform: perspective(600px) rotateY(-180deg);
+}
+
+.flip3D:hover > .back{
+    -webkit-transform: perspective(600px) rotateY(0deg);
+    transform: perspective(600px) rotateY(0deg);
+}
